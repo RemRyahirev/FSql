@@ -108,7 +108,7 @@ var displayStruct = function(struct, offset) {
 };
 
 cli.main(function(args, options) {
-    var path = args.shift() || Path.resolve('e:/'),
+    var path = args.shift() || Path.resolve('/'),
         size = (args.shift() || 300) * 1000 * 1000; // MB
 
     scan(path, function(struct) {
